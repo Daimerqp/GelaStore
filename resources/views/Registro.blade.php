@@ -3,8 +3,8 @@
     <title>Prueba</title>
 </head>
 <body bgcolor="#0000">
-    <center><img src="IMGN/under_construction_PNG66.png" ></center>
+    <center><img src="../resources/img/under.png" ></center>
     <br>
-    <center><a href="Index.html">Return</a></center>
+    <center><a href="{{route('main')}}">Return</a></center>
 </body>
 </html>

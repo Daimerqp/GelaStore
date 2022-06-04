@@ -15,7 +15,7 @@
     <header>
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="Registro.blade.php">Registrate!</a>
+            <a href="{{route('regis')}}">Registrate!</a>
             <a href="Iniciar.blade.php">Iniciar Sesion</a>
             <a href="Soporte.blade.php">Tienes algun problema?</a>
             <a href="AboutUs.blade.php">Acerca de nosotros</a>
