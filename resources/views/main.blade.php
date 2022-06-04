@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alimentos GELA</title>
-    <link rel="shortcut icon" href="img/logo.jpg">
-    <link rel="stylesheet" type="" href="css/styleSL.css">
+    <link rel="shortcut icon" href="../resources/img/logo.jpg">
+    <link rel="stylesheet" href="../resources/css/styleSL.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
           <button class="openbtn" onclick="openNav()">☰</button>  
         </div>
           
-          <script src="js/SideLeft.js"></script>
+          <script src="../resources/js/SideLeft.js"></script>
 
         <section clas="Titulo" id="titulo">
             <h1>Alimentos Gela</h1>
@@ -36,17 +36,17 @@
       
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="IMGN/si2.jpg" style="width:100%" >
+      <img src="../resources/img/si2.jpg" style="width:100%" >
     </div>
     
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="IMGN/si4.png"  style="width:75% height=75%">
+      <img src="../resources/img/si4.png"  style="width:75% height=75%">
     </div>
     
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="IMGN/si3.png" style="width:100%">
+      <img src="../resources/img/si3.png" style="width:100%">
     </div>
     
     </div>
@@ -58,7 +58,7 @@
       <span class="dot"></span> 
     </div>
     
-    <script src=js/SlideAni.js></script>
+    <script src=../resources/js/SlideAni.js></script>
 
     <!-- <div class="container">
         <button class="bton-prod"><h1>Coco</h1></button>
