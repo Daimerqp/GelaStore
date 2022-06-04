@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alimentos GELA</title>
-    <link rel="shortcut icon" href="IMGN/logo.jpg">
+    <link rel="shortcut icon" href="img/logo.jpg">
     <link rel="stylesheet" type="" href="css/styleSL.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
