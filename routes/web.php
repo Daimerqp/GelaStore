@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('main');
 })->name('main');
 
-Route::get('/registro', function () {
+Route::get('/Registro', function () {
     return view('Registro');
 }) ->name('regis');
+
+Route::get('/AboutUs', function () {
+    return view('AboutUs');
+}) ->name('about');
+
+Route::get('/IniciarSesion', function () {
+    return view('Iniciar');
+}) ->name('iniciar');
+
+Route::get('/Soporte', function () {
+    return view('Soporte');
+}) ->name('soporte');

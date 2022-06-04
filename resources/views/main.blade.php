@@ -16,9 +16,9 @@
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a href="{{route('regis')}}">Registrate!</a>
-            <a href="Iniciar.blade.php">Iniciar Sesion</a>
-            <a href="Soporte.blade.php">Tienes algun problema?</a>
-            <a href="AboutUs.blade.php">Acerca de nosotros</a>
+            <a href="{{route('iniciar')}}">Iniciar Sesion</a>
+            <a href="{{route('soporte')}}">Tienes algun problema?</a>
+            <a href="{{route('about')}}">Acerca de nosotros</a>
         </div
         <div id="main">
           <button class="openbtn" onclick="openNav()">☰</button>  
