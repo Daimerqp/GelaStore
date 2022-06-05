@@ -13,19 +13,18 @@
 </head>
 <body bgcolor="#4E79C9">
     <header>
+      
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a href="{{route('regis')}}">Registrate!</a>
             <a href="{{route('iniciar')}}">Iniciar Sesion</a>
             <a href="{{route('soporte')}}">Tienes algun problema?</a>
             <a href="{{route('about')}}">Acerca de nosotros</a>
-        </div
-        <div id="main">
+        </div>
+        <div id="mano">
           <button class="openbtn" onclick="openNav()">☰</button>  
         </div>
-          
-          <script src="../resources/js/SideLeft.js"></script>
-
+        <script src="../resources/js/SideLeft.js"></script>
         <section clas="Titulo" id="titulo">
             <h1>Alimentos Gela</h1>
             <h2><br></h2>
@@ -78,7 +77,8 @@
               <p>Producto:</p> 
         </div>
     </section>  -->
-    
+   
+
 </body>
 
 </html>
