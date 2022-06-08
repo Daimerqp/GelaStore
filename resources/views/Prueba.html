@@ -15,9 +15,24 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-black border-3 border-bottom border-primary">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand">GELASTORE</a>
-                <button type="button" class="navbar-toggler">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div id="MenuNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item"><a class="nav-link" href="#">Registrate.</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Iniciar Sesion.</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Acerca de nsotros.</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Opciones de soporte tecnico.</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Llamanos.</a></li>
+                                <li><a class="dropdown-item" href="#">Escribenos.</a></li>
+                                <li><a class="dropdown-item" href="#">Correo electronico.</a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>
