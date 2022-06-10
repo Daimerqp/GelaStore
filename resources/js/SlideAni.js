@@ -15,9 +15,10 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 5 seconds
+  setTimeout(showSlides, 2000); // tiempo de cambio de la imagen 
 }
 
+//funcion de cambio del boton lista 
 function Funtionch(x) {
   x.classList.toggle("change");
 }
