@@ -18,6 +18,6 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 5 seconds
 }
 
-function myFunction(x) {
+function Funtionch(x) {
   x.classList.toggle("change");
 }
