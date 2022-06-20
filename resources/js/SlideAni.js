@@ -22,3 +22,4 @@ function showSlides() {
 function Funtionch(x) {
   x.classList.toggle("change");
 }
+
