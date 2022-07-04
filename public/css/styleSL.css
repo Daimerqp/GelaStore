@@ -149,3 +149,8 @@ transform: rotate(-45deg) translate(-9px, 6px);
 -webkit-transform: rotate(45deg) translate(-8px, -8px);
 transform: rotate(45deg) translate(-8px, -8px);
 }
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
