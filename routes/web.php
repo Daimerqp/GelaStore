@@ -26,7 +26,7 @@ Route::get('/AboutUs', function () {
 }) ->name('about');
 
 Route::get('/IniciarSesion', function () {
-    return view('Iniciar');
+    return view('login');
 }) ->name('iniciar');
 
 Route::get('/Soporte', function () {
