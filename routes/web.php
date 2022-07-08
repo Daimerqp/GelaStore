@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+Use App\Http\Controllers\UserController;
+use Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,8 +28,10 @@ Route::get('/AboutUs', function () {
 }) ->name('about');
 
 Route::get('/IniciarSesion', function () {
-    return view('login');
+    return view('auth.login');
 }) ->name('iniciar');
+
+Route::post('/IniciarSesion', [UserController::class, 'store']) ->name('iniciar');
 
 Route::get('/Soporte', function () {
     return view('Soporte');

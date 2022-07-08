@@ -23,33 +23,43 @@
 
 <main class="form-signin">
 <div class="container-sm">
-        <form>
+        <form method="post">
+            @csrf
             <div class="col-xs-1">
-            <img class="mb-4" src="/img/logo.jpg" alt="" width="72" height="57">
-            <h1 class="h3 mb-3 fw-normal">Inicia sesión</h1>
-            </form>
-        <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com">
-            <label for="floatingInput">Ingresa tu e-mail</label>
-        </div>
-        <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
-            <label for="floatingPassword">Ingresa tu contraseña</label>
-        </div>
+                <img class="mb-4" src="/img/logo.jpg" alt="" width="72" height="57">
+                <h1 class="h3 mb-3 fw-normal">Inicia sesión</h1>
+                        {{-- MENSAJE DE ERROR --}}
+                @error('message')
+                    <div class="alert alert-danger">
+                        <strong>ERROR!</strong> Verifica los datos de ingreso.
+                    </div>
+                @enderror
 
-        <div class="checkbox mb-3">
-            <label>
-            <input type="checkbox" value="remember-me"> Recordar
-            </label>
-        </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+                            {{-- FORMULARIO DE LOGUEO --}}
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                    <label for="floatingInput">Ingresa tu e-mail</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="email" name="password" placeholder="Password">
+                    <label for="floatingPassword">Ingresa tu contraseña</label>
+                </div>
+
+                <div class="checkbox mb-3">
+                    <label>
+                    <input type="checkbox" value="remember-me"> Recordar
+                    </label>
+                </div>
+                                    {{-- BOTON DE ENVÍO --}}
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+
             </div>
-
+        </form>
 </div>
 <p class="mt-5 mb-3 text-muted">GELA &copy; 2022</p>
 </main>
 
 
 
-  </body>
+</body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\User;
+use App\Models\Users;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -14,6 +14,15 @@ class UserController extends Controller
         if (auth()->attempt(Request(['email', 'password']))==false){
             return back()->withErrors(['message'=>'Los datos de acceso son erroneos']);
         }
+        else{
+            return redirect()->to('/');
+        }
+
+    }
+
+    public function destroy(){
+        auth()->logout();
         return redirect()->to('/');
     }
 }
+
