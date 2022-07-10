@@ -7,49 +7,46 @@
     <title>Alimentos GELA</title>
     <link rel="shortcut icon" href="/public/img/logo.png">
     <link rel="stylesheet" href="/public/css/styleSL.css">
+    <link rel="stylesheet" href="/public/css/styleMain.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
     <link href="/public/css/carousel.css" rel="stylesheet">
     <!--Bootstrap-->
     <link rel="stylesheet" href="/assets/dist/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </head>
 
 <body bgcolor="#0000">
     
-    <div class="contaiber-fluid">
-        <nav class="navbar navbar-expand-md navbar-dark bg-black border-3 border-bottom border-primary">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand">GELASTORE</a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNav">
-                    <!-- <span class="navbar-toggler-icon"></span> -->
-                    <span class="containertgl" onclick="Funtionch(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </span>
-                </button>
-                <div id="MenuNav" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-3">
-                        <li class="nav-item"><a class="nav-link" href="/resources/views/registro.html">Registrate.</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Iniciar Sesion.</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/resources/views/About.html">Acerca de nsotros.</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Opciones de soporte tecnico.</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Llamanos.</a></li>
-                                <li><a class="dropdown-item" href="#">Escribenos.</a></li>
-                                <li><a class="dropdown-item" href="#">Correo electronico.</a></li>
-                            </ul>
-                        </li> 
+    <div class="collapse navbar-collapse"></div>
+    <header class="p-2 mb-2">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <button href="#" class="btn btn-outline-light-bottom-3 btn-lg">GelaStore</button>
+            <br><br>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Acerca de nosotros</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Opciones de soporte</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                        <li><a class="dropdown-item" href="#">Llamanos 👉 3004589584</a></li>
+                        <li><a class="dropdown-item" href="#">Escribenos 👉 GelaStore@gmail.com</a></li>
+                        <li><a class="dropdown-item" href="#">Chatea con nosotros 👉 +57 3004589584</a></li>
                     </ul>
-                </div>
+                </li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control" placeholder="Buscar... " aria-label="Search">
+            </form>
+            <div class="text-end">
+                <a href="#" type="button" class="btn btn-primary">Login</a>
+                <a href="/resources/views/registro.html" type="button" class="btn btn-primary">Sign-up</a>
             </div>
-        </nav>
-    </div>
+            </div>
+        </div>
+    </header>
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         
@@ -79,7 +76,7 @@
         </button>
     </div>
 
-    <div class="album py-5 bg-light">
+    <div class="">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
@@ -136,8 +133,8 @@
     
 
     <div class="container">
-        <footer class="py-5">
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <footer class="py-4">
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-0 my-0 border-top">
                 <p>&copy; 2022 GelaStore, Inc. All rights reserved.</p>
                 <ul class="list-unstyled d-flex">
                     <li class="ms-3"><a class="link-dark" href="/resources/views/main.html"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
@@ -147,15 +144,6 @@
             </div>
         </footer>
     </div>
-
-    <!-- <footer class="text-muted py-5">
-        <div class="container">
-            <a href="#"><i class="fa-solid fa-alien-8bit"></i></a>
-            <p> &copy;GelaStore</p>
-        </div>
-    </footer> -->
-
-
 
     <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
