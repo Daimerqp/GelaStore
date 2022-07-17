@@ -17,12 +17,12 @@ Route::get('/', function () {
     return view('main');
 })->name('main');
 
-Route::get('/Registro', function () {
-    return view('Registro');
-}) ->name('regis');
+Route::get('/registro', function () {
+    return view('registro');
+}) ->name('registro');
 
 Route::get('/AboutUs', function () {
-    return view('AboutUs');
+    return view('About');
 }) ->name('about');
 
 Route::get('/IniciarSesion', function () {
@@ -32,3 +32,7 @@ Route::get('/IniciarSesion', function () {
 Route::get('/Soporte', function () {
     return view('Soporte');
 }) ->name('soporte');
+
+Route::get('/views', function () {
+    return view('views');
+}) ->name('views');
