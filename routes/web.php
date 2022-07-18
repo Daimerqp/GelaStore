@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-Use App\Http\Controllers\UserController;
-use Models\User;
-
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\SessionsController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,20 +19,39 @@ Route::get('/', function () {
     return view('main');
 })->name('main');
 
-Route::get('/Registro', function () {
-    return view('Registro');
-}) ->name('regis');
+
 
 Route::get('/AboutUs', function () {
     return view('AboutUs');
 }) ->name('about');
 
-Route::get('/IniciarSesion', function () {
-    return view('auth.login');
-}) ->name('iniciar');
-
-Route::post('/IniciarSesion', [UserController::class, 'store']) ->name('iniciar');
-
 Route::get('/Soporte', function () {
     return view('Soporte');
 }) ->name('soporte');
+
+// LOGIN y REGISTRO
+
+Route::get('/register', [RegisterController::class, 'create'])
+    ->middleware('guest')
+    ->name('register.index');
+
+Route::post('/register', [RegisterController::class, 'store'])
+    ->name('register.store');
+
+
+
+Route::get('/login', [SessionsController::class, 'create'])
+    ->middleware('guest')
+    ->name('login.index');
+
+Route::post('/login', [SessionsController::class, 'store'])
+    ->name('login.store');
+
+Route::get('/logout', [SessionsController::class, 'destroy'])
+    ->middleware('auth')
+    ->name('login.destroy');
+
+
+Route::get('/admin', [AdminController::class, 'index'])
+    ->middleware('auth.admin')
+    ->name('admin.index');

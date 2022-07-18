@@ -33,8 +33,8 @@
                 </button>
                 <div id="MenuNav" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-3">
-                        <li class="nav-item"><a class="nav-link" href="..views/registro.html">Registrate.</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{route('iniciar')}}">Iniciar Sesion.</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{route('register.index')}}">Registrate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{route('login.index')}}">Iniciar Sesion</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Acerca de nsotros.</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Opciones de soporte tecnico.</a>
