@@ -17,6 +17,16 @@
     -webkit-overflow-scrolling: touch;
 }
 
+.main .h1{
+    height: 400px;
+    width: 800px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 /* body{
     --primario:rgb(0, 183, 255);
     --secundario:rgb(93, 230, 235);

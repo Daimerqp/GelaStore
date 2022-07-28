@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alimentos GELA</title>
-    <link rel="shortcut icon" href="{!! asset('/img/logo.png')!!}">
-    <link rel="stylesheet" href="{!! asset('/css/styleMain.css')!!}">
+    <link rel="shortcut icon" href="/public/img/logo.png">
+    <link rel="stylesheet" href="/public/css/styleMain.css">
+    <link rel="stylesheet" href="/public/css/styleDetailGr.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
@@ -23,10 +24,11 @@
     <header class="p-2 mb-2">
         <div class="container-lg">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <button href="#" class="btn btn-outline-light-bottom-3 btn-lg">GelaStore</button>
+            <a href="/resources/views/Main.html" class="btn btn-outline-light-bottom-3 btn-lg">GelaStore</a>
             <br><br>
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Acerca de nosotros</a></li>
+                <li class="nav-item"><a href="/resources/views/About.html" class="nav-link px-2 link-dark">Acerca de nosotros</a></li>
+                <li class="nav-item"><a href="/resources/views/carrito.html" class="nav-link px-2 link-dark">Tu carrito</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Opciones de soporte</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdown04">
@@ -42,28 +44,51 @@
             </form>
             <div class="text-end">
                 <a href="#" type="button" class="btn btn-primary">Login</a>
-                <a href="{{route('registro')}}" type="button" class="btn btn-primary">Sign-up</a>
+                <a href="#" type="button" class="btn btn-primary">Sign-up</a>
             </div>
             </div> 
         </div>
     </header>
 
     <main>
-    <div class="container">
+    <div class="container-md">
         <div class="row">
             <div class="col-md-6 order-md-1">
-                <img src="/public/img/productos_img/coco.jpg" width="500" height="500" alt="">
+                <img src="/public/img/productos_img/almendras.jpg" width="500" height="500" alt="">
             </div>
             <div class="col-md-6 order-md-2">
-                <h1>Coco Rallado</h1>
-                <h2>Precio: COP$ 3.000.00</h2>
-                <p class="lead">Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing 
-                elit. Porro et officiis quod totam harum eveniet quo quae provident itaque facere!
+                <h1>Almendras</h1>
+                <h2>Precio: COP$ 6.000.00</h2>
+                <p class="lead">
+                <p><h4>Tamaños Disponibles:</h4>
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">150gr</label>
+                        </div><br>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">250gr</label>
+                        </div><br>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">500gr</label>
+                        </div><br>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">1000gr</label>
+                        </div><br>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">5000gr</label>
+                        </div>
+                    </div>
+                </p>
                 </p>
 
                 <div class="d-grid gap-4 col-8 mx-auto">
                         <a href="#" type="button" class="btn btn-md btn-outline-success">Agregar al carrito de compras</a>
-                        <a href="#" type="button" class="btn btn-md btn-outline-success">Agregar</a>
+                        <a href="/resources/views/pago.html" type="button" class="btn btn-md btn-outline-success">Comprar ahora</a>
                 </div>
                 
             </div>
@@ -72,11 +97,11 @@
     </main>
 
     <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">&copy; 2017–2022 Company Name</p>
+        <p class="mb-1">&copy; 2022 GelaStore </p>
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Privacy</a></li>
-            <li class="list-inline-item"><a href="#">Terms</a></li>
-            <li class="list-inline-item"><a href="#">Support</a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+            <li class="list-inline-item"><a href="#">Twitter</a></li>
+            <li class="list-inline-item"><a href="#">Soporte</a></li>
         </ul>
     </footer>
 
