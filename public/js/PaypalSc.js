@@ -8,7 +8,7 @@ paypal.Buttons({
         return actions.order.create({
             purchase_units: [{
             amount: {
-                value: '4' // Can also reference a variable or function
+                value: '100' // Can also reference a variable or function
             }
             }]
         });
