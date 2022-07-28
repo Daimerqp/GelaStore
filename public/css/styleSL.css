@@ -123,7 +123,6 @@ to {opacity: 1}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
     .text {font-size: 11px}
-<<<<<<< HEAD
 }
 
 .containertgl {
@@ -154,6 +153,4 @@ transform: rotate(45deg) translate(-8px, -8px);
 .bi {
     vertical-align: -.125em;
     fill: currentColor;
-=======
->>>>>>> 0c706e9b23ee3a08256081138c023afdeda333be
 }

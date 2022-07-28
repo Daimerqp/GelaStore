@@ -21,6 +21,51 @@ Route::get('/views', function () {
     return view('views');
 }) ->name('views');
 
+Route::get('/about', function () {
+    return view('AboutUs');
+}) ->name('about');
+
+Route::get('/carrito', function () {
+    return view('carrito');
+}) ->name('carrito');
+
+Route::get('/viewsCoco', function () {
+    return view('viewsCoco');
+}) ->name('coco');
+
+Route::get('/viewsAlmendras', function () {
+    return view('viewsAlmendras');
+}) ->name('almendras');
+
+Route::get('/viewsHojuelas', function () {
+    return view('viewsHojuelas');
+}) ->name('hojuelas');
+
+Route::get('/viewsGranola', function () {
+    return view('viewsGranola');
+}) ->name('granola');
+
+Route::get('/viewsQuinua', function () {
+    return view('viewsQuinua');
+}) ->name('quinua');
+
+Route::get('/viewsArandanos', function () {
+    return view('viewsArandanos');
+}) ->name('arandanos');
+
+Route::get('/pagoForm', function () {
+    return view('pagoForm');
+}) ->name('pago');
+
+
+
+Route::get('/pagoTest', function () {
+    return view('pagoTest');
+}) ->name('pagoTest');
+
+Route::get('/pagoComp', function () {
+    return view('pagoComp');
+}) ->name('pagoComp');
 /* Route::get('/register', [RegisterController::class, 'show']);
 Route::post('/action-register', [RegisterController::class, 'register']); */
 
