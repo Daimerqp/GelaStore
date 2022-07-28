@@ -20,12 +20,12 @@
                 <input type="search" class="form-control" placeholder="Buscar... " aria-label="Search">
             </form>
 
-      @auth
-        {{auth()->user()->name}}
-        <div class="text-end px-2">
-          <a href="{{ route('logout.perform') }}" class="btn btn-primary me-2">Logout</a>
-        </div>
-      @endauth
+        @auth
+            {{auth()->user()->name}}
+            <div class="text-end px-2">
+            <a href="{{ route('logout.perform') }}" class="btn btn-primary me-2">Logout</a>
+            </div>
+         @endauth
 
       @guest
         <div class="text-end">

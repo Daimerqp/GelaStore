@@ -41,6 +41,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         /**
          * Login Routes
          */
+        Route::get('/login', 'LoginController@show')->name('login');
         Route::get('/login', 'LoginController@show')->name('login.show');
         Route::post('/login', 'LoginController@login')->name('login.perform');
 
@@ -53,3 +54,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
     });
 });
+
+route::get('/admin', function(){
+    return view('users');
+})->name('admin');

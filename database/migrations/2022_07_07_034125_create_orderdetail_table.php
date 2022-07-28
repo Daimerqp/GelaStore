@@ -19,7 +19,6 @@ class CreateOrderdetailTable extends Migration
             $table->integer('orderId');
             $table->integer('cantidad');
             $table->integer('total');
-            
             $table->foreign('orderId', 'orderdetail_ibfk_1')->references('orderId')->on('orden')->onUpdate('cascade');
             $table->foreign('productId', 'orderdetail_ibfk_2')->references('productId')->on('product')->onUpdate('cascade');
         });
